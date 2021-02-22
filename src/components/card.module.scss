@@ -1,6 +1,9 @@
+@use "./variable.scss";
+
 .indexCard {
-    display: block;
+    display: inline-block;
     width: 150px;
     height: 300px;
     border: 1px solid lightgrey;
+    border-radius: variable.$round-corner;
 }

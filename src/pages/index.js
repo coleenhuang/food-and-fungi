@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import Layout from "../components/layout"
+import Layout from '../components/layout'
+import styles from './index.module.scss'
 
 import SEO from "../components/seo"
 import Card from "../components/card"
@@ -11,15 +11,12 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>Fungi [ˈfəŋ-​ˌgī]</h1>
     <p>A kingdom of eukaryotic organisms consumed or used in the production of food.</p>
-    <Link to='/mushrooms'>
-      <Card name='Mushrooms'/>
-    </Link>
-    <Link to='/molds'>
-      <Card name='Molds'/>
-    </Link>
-    <Link to='/yeasts'>
-      <Card name='Yeasts'/>
-    </Link>
+    
+    <div className={styles.cardContainer}>
+        <Card name='Mushrooms'/>
+        <Card name='Molds'/>
+        <Card name='Yeasts'/>
+    </div>
   </Layout>
 )
 
