@@ -1,12 +1,21 @@
 @use "./variables.scss";
 
 .indexCard {
+    filter: grayscale(80%);
+    margin: 0.5rem 1rem;
+    padding-top: 0.25rem;
     color: variables.$dark-shades;
     background-color: variables.$light-shades;
     display: inline-block;
     border-radius: variables.$round-corner;
+    text-align: center;
     a {
         text-decoration: none;
         color: inherit
     }
+}
+
+.indexCard:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
 }
