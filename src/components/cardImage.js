@@ -35,9 +35,8 @@ export default ({type}) => {
         case 'yeasts':
             return <Img fluid={data.yeasts.childImageSharp.fluid} />
         default:
-            return <Img fluid={data.mushrooms.childImageSharp.fluid} />
+            return <div>Placeholder</div>
     }
-    return 
 }
     
 
