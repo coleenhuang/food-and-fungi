@@ -9,9 +9,12 @@ import Card from "../components/card"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Fungi [ˈfəŋ-​ˌgī]</h1>
-    <p>A kingdom of eukaryotic organisms consumed or used in the production of food.</p>
-    
+    <div className={styles.intro}>
+      <div>
+        <h1>Fungi [ˈfəŋ-​ˌgī]</h1>
+        <p>A kingdom of eukaryotic organisms consumed or used in the production of food.</p>
+      </div>
+    </div>
     <div className={styles.cardContainer}>
         <Card name='Mushrooms'/>
         <Card name='Molds'/>

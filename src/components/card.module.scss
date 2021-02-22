@@ -1,9 +1,12 @@
-@use "./variable.scss";
+@use "./variables.scss";
 
 .indexCard {
+    color: variables.$dark-shades;
+    background-color: variables.$light-shades;
     display: inline-block;
-    width: 150px;
-    height: 300px;
-    border: 1px solid lightgrey;
-    border-radius: variable.$round-corner;
+    border-radius: variables.$round-corner;
+    a {
+        text-decoration: none;
+        color: inherit
+    }
 }
