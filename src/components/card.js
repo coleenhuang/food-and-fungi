@@ -29,15 +29,10 @@ const Card = (props) => {
           }
     }`)
     function renderImage(type) {
-        if (type==='Molds'){
-            return <Img fluid={data.molds.childImageSharp.fluid}/>
-        }
-        else if (type==='Yeasts'){
-            return <Img fluid={data.yeasts.childImageSharp.fluid}/>
-        }
-        else {
-            return <Img fluid={data.mushrooms.childImageSharp.fluid}/>
-        }
+
+        return <Img fluid={data.molds.childImageSharp.fluid}/>
+
+
     }
     return (
     <div className={styles.indexCard}>
