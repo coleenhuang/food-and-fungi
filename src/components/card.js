@@ -28,10 +28,21 @@ const Card = (props) => {
             }
           }
     }`)
+    function renderImage(type) {
+        if (type==='Molds'){
+            return <Img fluid={data.molds.childImageSharp.fluid}/>
+        }
+        else if (type==='Yeasts'){
+            return <Img fluid={data.yeasts.childImageSharp.fluid}/>
+        }
+        else {
+            return <Img fluid={data.mushrooms.childImageSharp.fluid}/>
+        }
+    }
     return (
     <div className={styles.indexCard}>
         <Link to={`/${props.name.toLowerCase()}`}>
-            <Img fluid={data.mushrooms.childImageSharp.fluid}/>
+            {renderImage(props.name)}
             <h2>{props.name}</h2>
         </Link>
     </div>)
