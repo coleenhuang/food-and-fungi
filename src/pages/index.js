@@ -16,9 +16,9 @@ const IndexPage = () => (
       </div>
     </div>
     <div className={styles.cardContainer}>
-        <Card name='Mushroom'/>
-        <Card name='Molds'/>
-        <Card name='Yeasts'/>
+        <Card name='Mushroom' img='mushrooms'/>
+        <Card name='Molds' img='mold'/>
+        <Card name='Yeasts'img='yeast'/>
     </div>
   </Layout>
 )
